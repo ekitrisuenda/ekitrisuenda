@@ -1,3 +1,2 @@
-# ekitrisuenda
-ekitrisuenda
-ekitrisuenda
+# eki tri suenda
+tugas pemrogramam terstruktur
