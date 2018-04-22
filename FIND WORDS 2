@@ -83,9 +83,9 @@ for (int k=0;k<cari;k++){
 			}			
 		}
 	}
-if(ketemu>0){cout<<"ada"<<endl<<endl;
+if(ketemu>0){cout<<"hasil = ada"<<endl<<endl;
 	}else {
-	cout<<"tidak ada"<<endl<<endl;
+	cout<<"hasil = tidak ada"<<endl<<endl;
 	}
 
 
