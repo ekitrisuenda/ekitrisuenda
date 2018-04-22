@@ -1,8 +1,9 @@
 #include <iostream>
 #include <cstring>
+
 using namespace std;
 
-char kata[15][15] ={{'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},
+char kata[15][15] =    {{'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},
 			{'a','a','u','n','t','t','m','m','h','f','o','o','d','n','b'},
 			{'j','l','w','c','q','l','d','z','m','p','m','v','d','m','r'},
 			{'a','s','a','g','m','q','u','w','v','v','b','s','o','h','i'},
@@ -18,28 +19,21 @@ char kata[15][15] ={{'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'
 			{'p','d','c','r','z','m','s','n','g','r','d','n','r','p','z'},
 			{'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'}};
 
-
-
-
-
 int main(){
-	
+
 	int cari,cek,jumlah;
 	int ketemu=0;
 	char carikata[100];
-	
-												
+							
 	for(int i=0;i<15;i++){
 		for (int j=0;j<15;j++){
 			cout<<kata[i][j]<<" ";
 		}
 		cout<<endl;
 	}
-	
-cout<<"brapa banyak kata yang ingin di cari = ";cin>>jumlah;
+cout<<endl;
 
-for (int i=0;i<=jumlah-1;i++){
-cout << "masukan kata "<<i+1<<" = ";	
+cout << "masukan kata = ";	
 cin>>carikata;
 
 cari=strlen(carikata);					
@@ -74,7 +68,6 @@ for (int k=0;k<cari;k++){
 		}else{ketemu+=0;}
 		cek=0;
 				
-				
 ///DIAGONAL
 for (int k=0;k<cari;k++){
 	if (carikata[k]==kata[i+k][j+k]){
@@ -86,19 +79,15 @@ for (int k=0;k<cari;k++){
 	if (cek==cari-1){
 		ketemu+=1;
 		}else{ketemu+=0;}
-		cek=0;
-									
+		cek=0;						
 			}			
 		}
 	}
-	
-	
-	if(ketemu>0){
-		cout<<"ada"<<endl<<endl;
+if(ketemu>0){cout<<"ada"<<endl<<endl;
+	}else {
+	cout<<"tidak ada"<<endl<<endl;
 	}
-	else {
-		cout<<"tidak ada"<<endl<<endl;
-	}
-}
 
+
+return 0;
 }
